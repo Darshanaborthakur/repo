@@ -1,0 +1,19 @@
+class Super {
+    int num = 100;
+}
+
+class Sub extends Super {
+    int num = 110;
+
+    void printNumber() {
+        System.out.println(super.num);
+    }
+}
+
+class SuperClassNum {
+
+    public static void main(String args[]) {
+        Sub obj = new Sub();
+        obj.printNumber();
+    }
+}
